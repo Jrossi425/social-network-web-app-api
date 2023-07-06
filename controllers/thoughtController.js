@@ -1,5 +1,7 @@
+// requiring the models
 const { User, Thought } = require('../models');
 
+// get all thoughts
 const getThoughts = async (req, res) => {
     try {
         const userData = await Thought.find();
@@ -10,6 +12,7 @@ const getThoughts = async (req, res) => {
 
 }
 
+// get single thought by id
 const getSingleThought = async (req, res) => {
     try {
         const userData = await Thought.findById(req.params.id)
@@ -24,6 +27,7 @@ const getSingleThought = async (req, res) => {
     }
 }
 
+// create thought
 const createThought = async (req, res) => {
     try {
         const userData = await Thought.create(req.body);
@@ -41,6 +45,7 @@ const createThought = async (req, res) => {
     }
 }
 
+// update thought by id
 const updateThought = async (req, res) => {
     try {
         const userData = await Thought.findByIdAndUpdate(
@@ -59,6 +64,7 @@ const updateThought = async (req, res) => {
     }
 }
 
+// delete thought by id
 const deleteThought = async (req, res) => {
     try {
         const userData = await Thought.findByIdAndDelete(req.params.id);
@@ -72,6 +78,7 @@ const deleteThought = async (req, res) => {
     }
 }
 
+// create reaction method to add a reaction to a thought
 const createReaction = async (req, res) => {
     try {
         const userData = await Thought.findByIdAndUpdate(
@@ -88,6 +95,7 @@ const createReaction = async (req, res) => {
     }
 }
 
+// delete reaction method to remove a reaction from a thought
 const deleteReaction = async (req, res) => {
     try {
         const userData = await Thought.findByIdAndUpdate(
@@ -106,7 +114,7 @@ const deleteReaction = async (req, res) => {
     }
 }
 
-
+// export the methods
 module.exports = {
     getThoughts,
     getSingleThought,

@@ -10,4 +10,8 @@ N/A
 by manipulating back end data using Postman/Insomnia.
 https://drive.google.com/file/d/1vnlFeqJVb14sqTGwCh2vR-dDH0QbhUUC/view
 
+## License
+This project uses MIT
 
+## Contributions
+Justin

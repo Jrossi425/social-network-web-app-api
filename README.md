@@ -9,6 +9,9 @@ N/A
 ## Usage
 by manipulating back end data using Postman/Insomnia.
 https://drive.google.com/file/d/1vnlFeqJVb14sqTGwCh2vR-dDH0QbhUUC/view
+![image](https://github.com/Jrossi425/social-network-web-app-api/assets/123151991/d12be9da-b6c7-49e1-9e97-14c5a4d1cc23)
+![image](https://github.com/Jrossi425/social-network-web-app-api/assets/123151991/7c355b85-9fa2-4fc3-aa8f-90551514b770)
+
 
 ## License
 This project uses MIT
